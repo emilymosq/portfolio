@@ -7,9 +7,6 @@
 .text__zone {
     margin-top: 160px;
     position: relative;
-    /* left: 15%; */
-    /* top: 45%; */
-    /* transform: translateY(-50%); */
     width: 60%;
     display: grid;
     gap: 0.7em;
@@ -22,26 +19,12 @@ h2 {
 }
 
 h1 {
-    /* color: #E6F1FF; */
     color: #ccd6f6;
-    font-size: 70px;
-    /* font-size: clamp(4em, 2rem + 1rem, 3rem); */
+    /* font-size: 6vw; */
+    font-weight: 600;
+    font-size: clamp(40px, 8vw, 80px);
     font-family: 'Poppins', sans-serif;
-    /* width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-    typing 3s steps(14),
-    cursor .5s step-end infinite alternate; */
 }
-
-/* @keyframes cursor{
-    50% { border-color: #F988FF }
-}
-
-@keyframes typing{
-    from {width: 0}
-} */
 
 h3,
 p {
@@ -57,6 +40,7 @@ p {
 
 .btn{
     border: none;
+    font-weight: 600;
     padding: 16px 25px;
     border-radius: 5px;
     cursor: pointer;
@@ -86,8 +70,6 @@ p {
     width: 1.7em;
     border: 0.2em solid #E6F1FF;
     margin-top: 140px;
-    /* left: 0;
-    right: 0; */
     border-radius: 3em;
     cursor: pointer;
 }
@@ -113,5 +95,13 @@ p {
     100%{
         transform: translateY(1.4em);
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .btn {
+        width: auto;
+        font-size: 14px;
     }
 }

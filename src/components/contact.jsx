@@ -1,21 +1,50 @@
 import React, { useRef, useState } from "react";
 import "../styles/contact.css";
 import { motion } from "framer-motion";
+import { useForm } from "../hooks/useForm";
 import Swal from "sweetalert2";
-// import Swal from "@sweetalert2/theme-dark"
 import emailjs from "@emailjs/browser";
 
+const initialForm = {
+  name: "",
+  email: "",
+  message: "",
+};
+
+const validationsForm = (formContact) => {
+  let errors = {};
+  let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+  let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
+  let regexMessage = /^.{1,255}$/;
+
+  if (!formContact.name.trim()) {
+    errors.name = "This field cannot be empty.";
+  } else if (!regexName.test(formContact.name.trim())) {
+    errors.name = "This field accepts only letters and blanks.";
+  }
+
+  if (!formContact.email.trim()) {
+    errors.email = "This field is required";
+  } else if (!regexEmail.test(formContact.email.trim())) {
+    errors.email = "This field is invalid.";
+  }
+
+  if (!formContact.message.trim()) {
+    errors.message = "This field is required";
+  } else if (!regexMessage.test(formContact.message.trim())) {
+    errors.message = "This field doesn't accept more than 250 characters.";
+  }
+  return errors;
+};
+
 export default function Contact() {
-  const form = useRef();
-
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
-        "service_p7gbslw",
+        "service_083gmeb",
         "template_13znpe9",
-        form.current,
+        e.target,
         "ISLM8vtLC_W9Hggus"
       )
       .then(
@@ -23,21 +52,31 @@ export default function Contact() {
           console.log(result.text);
           Swal.fire({
             icon: "success",
-            title: "The message was sent correctly! :)",
-            background: "#1b003a",
+            title: "Message Sent Successfully",
             color: "#E6F1FF",
-            confirmButtonColor: "#bc4ed8",
+            background: "#1b003a",
+            confirmButtonColor: "#f988ff",
           });
         },
         (error) => {
           console.log(error.text);
           Swal.fire({
             icon: "error",
-            title: "The message has not been sent",
+            title: "Ooops, something went wrong",
+            text: error.text,
+            color: "#E6F1FF",
+            background: "#1b003a",
+            denyButtonColor: "#f988ff",
           });
         }
       );
+    e.target.reset();
   };
+
+  const { formContact, errors, handleChange, handleBlur } = useForm(
+    initialForm,
+    validationsForm
+  );
 
   return (
     <motion.div
@@ -56,32 +95,62 @@ export default function Contact() {
         </p>
       </div>
       <div className="form__container">
-        <form className="form" ref={form} onSubmit={sendEmail}>
+        <form className="form" autoComplete="off" onSubmit={handleSubmit}>
           <div className="form__group">
             <label for="name" className="form__label">
               Name
             </label>
             <input
               type="name"
+              name="name"
               className="form__input"
               placeholder="Insert your name"
+              onBlur={handleBlur}
+              onChange={handleChange}
+              value={formContact.name}
+              required
             />
+            {errors.name && (
+              <span className="error__message">{errors.name}</span>
+            )}
           </div>
           <div className="form__group">
             <label for="email" className="form__label">
               Email
             </label>
-            <input type="email" className="form__input" placeholder="Insert your email"/>
+            <input
+              type="email"
+              name="email"
+              className="form__input"
+              placeholder="Insert your email"
+              onBlur={handleBlur}
+              onChange={handleChange}
+              value={formContact.email}
+              required
+            />
+            {errors.email && (
+              <span className="error__message">{errors.email}</span>
+            )}
           </div>
           <div className="form__group">
             <label for="message" className="form__label">
               Message
             </label>
-            <textarea name="message" className="form__input area" placeholder="Insert your message"/>
+            <textarea
+              type="message"
+              name="message"
+              className="form__input area"
+              placeholder="Insert your message"
+              onBlur={handleBlur}
+              onChange={handleChange}
+              value={formContact.message}
+              required
+            />
+            {errors.message && (
+              <span className="error__message">{errors.message}</span>
+            )}
           </div>
-          <button type="submit" className="form__submit" value="Send">
-            Shoot!
-          </button>
+          <input type="submit" value="Shoot!" className="form__submit" />
         </form>
       </div>
     </motion.div>

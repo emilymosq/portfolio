@@ -91,10 +91,17 @@ button {
     border-radius: 50%;
 }
 
+@media screen and (max-width: 1190px) {
+    .work__images {
+        padding: 20px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .work__images {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
     }
 }
 

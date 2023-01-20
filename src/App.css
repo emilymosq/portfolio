@@ -22,3 +22,7 @@ body::-webkit-scrollbar-thumb{
   border-radius: 5px;
   /* border-right: 2px solid; */
 }
+
+::selection{
+  background: #451a51;
+}

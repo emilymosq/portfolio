@@ -12,11 +12,7 @@ export default function About() {
         transition={{ duration: 1 }}
         className="about__container"
       >
-        <div
-        // initial={{ opacity: 0 }}
-        // whileInView={{ y: [-50, 0], opacity: 1 }}
-        className="about__title"
-        >
+        <div className="about__title">
           <h2>About</h2>
           <h4>Who is Emily?</h4>
         </div>
@@ -37,8 +33,6 @@ export default function About() {
               Diving License from PADI 🇵🇭!) I'm happiest when I'm creating,
               learning, exploring and thinking about how to make things better.
               Currently solving deceptively simple problems at UsePastel.Com.
-              I'm not available for any freelance work, but feel free to reach
-              out and say hello! I promise I don't bite 😉
             </p>
           </div>
         </div>

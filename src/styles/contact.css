@@ -2,7 +2,8 @@
     display: grid;
     gap: 0.4em;
     text-align: center;
-    width: 39%;
+    width: 100%;
+    max-width: 490px;
 }
 
 .contact__container {
@@ -51,7 +52,7 @@
 
 .form__submit{
     width: 200px;
-    margin-top: 40px;
+    font-weight: 600;
     border: none;
     padding: 16px 65px;
     border-radius: 5px;
@@ -75,3 +76,29 @@
     resize: none;
 }
 
+.error__message{
+    padding: 5px;
+    font-size: 15px;
+    color: red;
+}
+
+@media screen and (max-width: 500px) {
+    .contact__title {
+        max-width: 400px;
+    }
+
+    .form__input{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .contact__title {
+        width: auto;
+        padding: 20px;
+    }
+
+    .form__input{
+        width: auto;
+    }
+}

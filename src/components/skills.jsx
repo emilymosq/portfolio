@@ -6,6 +6,7 @@ import {
   faHtml5,
   faCss3Alt,
   faReact,
+  faFigma,
   faPhp,
   faSymfony,
   faBootstrap,
@@ -47,6 +48,12 @@ export default function Skills() {
               />
               <FontAwesomeIcon
                 icon={faReact}
+                color="#E6F1FF"
+                fontSize={80}
+                className="icon"
+              />
+              <FontAwesomeIcon
+                icon={faFigma}
                 color="#E6F1FF"
                 fontSize={80}
                 className="icon"
