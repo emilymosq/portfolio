@@ -11,6 +11,7 @@ export default function About() {
         whileInView={{ y: [-50, 0], opacity: 1 }}
         transition={{ duration: 1 }}
         className="about__container"
+        id="about"
       >
         <div className="about__title">
           <h2>About</h2>

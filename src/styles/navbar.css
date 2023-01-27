@@ -32,6 +32,7 @@
     position: relative;
     opacity: 0.9;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .nav__container > .nav__items > .nav__links:hover{

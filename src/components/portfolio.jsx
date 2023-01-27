@@ -69,7 +69,8 @@ export default function Portfolio() {
                   whileHover={{ scale: [1, 1.1] }}
                   transition={{ duration: 0.3 }}
                   href={work.link} 
-                  className="a">
+                  className="a"
+                  target="_blank">
                     <FontAwesomeIcon
                       icon={faGithub}
                       color="#E6F1FF"

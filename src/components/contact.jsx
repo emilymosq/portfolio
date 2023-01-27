@@ -84,6 +84,7 @@ export default function Contact() {
       whileInView={{ y: [-50, 0], opacity: 1 }}
       transition={{ duration: 1 }}
       className="contact__container"
+      id="contact"
     >
       <div className="contact__title">
         <h2>Contact</h2>
