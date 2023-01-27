@@ -67,10 +67,9 @@
         display: flex;
         flex-direction: column;
         background: #1B003A;
-        /* background: #E6F1FF; */
         text-align: center;
         right: 0;
-        width: 40%;
+        width: 50%;
         height: 100vh;
         transform: translateX(100%);
         transition: all .45s;
