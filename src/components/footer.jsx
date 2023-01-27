@@ -28,7 +28,7 @@ export default function Footer() {
                   className="icon__sm"
                 />
               </a>
-              <a href="linkedin.com/in/emily-mosquera/" target="_blank">
+              <a href="https://linkedin.com/in/emily-mosquera/" target="_blank">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   color="#E6F1FF"
