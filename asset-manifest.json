@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9c43184b.css",
+    "main.js": "/portfolio/static/js/main.942d5188.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/vivarium.svg": "/portfolio/static/media/vivarium.589c1a9ac294ca3c697d412b8e5a285d.svg",
+    "static/media/veggie.svg": "/portfolio/static/media/veggie.a384771656daf73cf6eb7699db9b08cb.svg",
+    "static/media/me.jpg": "/portfolio/static/media/me.e4b00f7f7d9c0cae301b.jpg",
+    "static/media/form.svg": "/portfolio/static/media/form.024480e7ce77b372693542314672f793.svg",
+    "static/media/figaro.svg": "/portfolio/static/media/figaro.fdb083f34389e7edd55853d8aed5e2f8.svg",
+    "static/media/plantae.svg": "/portfolio/static/media/plantae.3609651ec76881a81ae276c6e5b9da4e.svg",
+    "static/media/fichaje.svg": "/portfolio/static/media/fichaje.10e2742956b9840310a213842d570a79.svg",
+    "static/media/CV-Emily Mosquera.pdf": "/portfolio/static/media/CV-Emily Mosquera.4cb1fb26d712c12154ec.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.9c43184b.css.map": "/portfolio/static/css/main.9c43184b.css.map",
+    "main.942d5188.js.map": "/portfolio/static/js/main.942d5188.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c43184b.css",
+    "static/js/main.942d5188.js"
+  ]
+}
