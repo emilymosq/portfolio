@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1c40b48a.css",
-    "main.js": "/portfolio/static/js/main.b4b5d7ac.js",
+    "main.css": "/portfolio/static/css/main.435e2261.css",
+    "main.js": "/portfolio/static/js/main.3561c0fa.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/vivarium.svg": "/portfolio/static/media/vivarium.589c1a9ac294ca3c697d412b8e5a285d.svg",
     "static/media/veggie.svg": "/portfolio/static/media/veggie.a384771656daf73cf6eb7699db9b08cb.svg",
@@ -12,12 +12,12 @@
     "static/media/fichaje.svg": "/portfolio/static/media/fichaje.10e2742956b9840310a213842d570a79.svg",
     "static/media/CV-Emily Mosquera.pdf": "/portfolio/static/media/CV-Emily Mosquera.4cb1fb26d712c12154ec.pdf",
     "index.html": "/portfolio/index.html",
-    "main.1c40b48a.css.map": "/portfolio/static/css/main.1c40b48a.css.map",
-    "main.b4b5d7ac.js.map": "/portfolio/static/js/main.b4b5d7ac.js.map",
+    "main.435e2261.css.map": "/portfolio/static/css/main.435e2261.css.map",
+    "main.3561c0fa.js.map": "/portfolio/static/js/main.3561c0fa.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c40b48a.css",
-    "static/js/main.b4b5d7ac.js"
+    "static/css/main.435e2261.css",
+    "static/js/main.3561c0fa.js"
   ]
 }
