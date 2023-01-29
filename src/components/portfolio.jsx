@@ -50,7 +50,7 @@ export default function Portfolio() {
               >
                 {workNav}
               </button>
-            )
+            );
           })}
         </div>
         <div className="work__images">
@@ -58,19 +58,20 @@ export default function Portfolio() {
             return (
               <div className="work__image" key={work.id}>
                 <img src={work.img} alt="work-image" className="img" />
-                <motion.div 
-                initial={{ opacity:0 }}
-                whileHover={{ opacity: [0, 1] }}
-                transition={{ duration: 0.3,
-                ease: "easeInOut" }}
-                className="hover__layer">
-                  <motion.a 
-                  whileInView={{ scale: [0, 1] }}
-                  whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.3 }}
-                  href={work.link} 
-                  className="a"
-                  target="_blank">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="hover__layer"
+                >
+                  <motion.a
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 1.1] }}
+                    transition={{ duration: 0.3 }}
+                    href={work.link}
+                    className="a"
+                    target="_blank"
+                  >
                     <FontAwesomeIcon
                       icon={faGithub}
                       color="#E6F1FF"
@@ -80,7 +81,7 @@ export default function Portfolio() {
                   </motion.a>
                 </motion.div>
               </div>
-            )
+            );
           })}
         </div>
       </motion.div>

@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="socialMedia">
             <h3>My social media</h3>
             <div className="footer_icon">
-              <a href="https://github.com/emilymosq" target="_blank">
+              <a href="https://github.com/emilymosq" target="_blank" rel="noreferrer noopener">
                 <FontAwesomeIcon
                   icon={faGithub}
                   color="#E6F1FF"
@@ -28,7 +28,7 @@ export default function Footer() {
                   className="icon__sm"
                 />
               </a>
-              <a href="https://linkedin.com/in/emily-mosquera/" target="_blank">
+              <a href="https://linkedin.com/in/emily-mosquera/" target="_blank" rel="noreferrer noopener">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   color="#E6F1FF"

@@ -7,9 +7,9 @@ import {
   faCss3Alt,
   faReact,
   faFigma,
+  faBootstrap,
   faPhp,
   faSymfony,
-  faBootstrap,
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,68 +27,88 @@ export default function Skills() {
           <h5>My Skills</h5>
           <p>Here are a few technologies I’ve been working with recently:</p>
           <div className="skills">
-            <div className="box__skills">
+            <ul className="box__skills">
+              <li className="icon__list">
                 <FontAwesomeIcon
                   icon={faHtml5}
                   color="#E6F1FF"
                   fontSize={80}
                   className="icon"
                 />
+              </li>
+              <li className="icon__list">
                 <FontAwesomeIcon
                   icon={faCss3Alt}
                   color="#E6F1FF"
                   fontSize={80}
                   className="icon"
                 />
+              </li>
+              <li className="icon__list">
                 <FontAwesomeIcon
                   icon={faSquareJs}
                   color="#E6F1FF"
                   fontSize={80}
                   className="icon"
                 />
+              </li>
+              <li className="icon__list">
                 <FontAwesomeIcon
                   icon={faReact}
                   color="#E6F1FF"
                   fontSize={80}
                   className="icon"
                 />
+              </li>
+              <li className="icon__list">
                 <FontAwesomeIcon
                   icon={faFigma}
                   color="#E6F1FF"
                   fontSize={80}
                   className="icon"
                 />
+              </li>
+              <li className="icon__list">
                 <FontAwesomeIcon
                   icon={faBootstrap}
                   color="#E6F1FF"
                   fontSize={80}
                   className="icon"
                 />
+              </li>
+              <li className="icon__list">
                 <FontAwesomeIcon
                   icon={faPython}
                   color="#E6F1FF"
                   fontSize={80}
                   className="icon"
                 />
+              </li>
+              <li className="icon__list">
                 <FontAwesomeIcon
                   icon={faPhp}
                   color="#E6F1FF"
                   fontSize={80}
                   className="icon"
                 />
+              </li>
+              <li className="icon__list">
                 <FontAwesomeIcon
                   icon={faSymfony}
                   color="#E6F1FF"
                   fontSize={80}
                   className="icon"
                 />
+              </li>
+              <li className="icon__list">
                 <FontAwesomeIcon
                   icon={faGitAlt}
                   color="#E6F1FF"
                   fontSize={80}
                   className="icon"
                 />
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </motion.div>

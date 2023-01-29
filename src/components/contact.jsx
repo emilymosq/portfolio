@@ -15,7 +15,7 @@ const validationsForm = (formContact) => {
   let errors = {};
   let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
   let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
-  let regexMessage = /^.{1,255}$/;
+  let regexMessage = /^.{1,400}$/;
 
   if (!formContact.name.trim()) {
     errors.name = "This field cannot be empty.";
@@ -24,15 +24,15 @@ const validationsForm = (formContact) => {
   }
 
   if (!formContact.email.trim()) {
-    errors.email = "This field is required";
+    errors.email = "This field cannot be empty.";
   } else if (!regexEmail.test(formContact.email.trim())) {
     errors.email = "This field is invalid.";
   }
 
   if (!formContact.message.trim()) {
-    errors.message = "This field is required";
+    errors.message = "This field cannot be empty.";
   } else if (!regexMessage.test(formContact.message.trim())) {
-    errors.message = "This field doesn't accept more than 250 characters.";
+    errors.message = "This field doesn't accept more than 400 characters.";
   }
   return errors;
 };
