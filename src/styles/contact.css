@@ -98,7 +98,12 @@
         padding: 20px;
     }
 
+    .form__container{
+        width: auto;
+    }
+
     .form__input{
         width: auto;
     }
+
 }

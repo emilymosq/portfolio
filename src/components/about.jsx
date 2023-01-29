@@ -22,19 +22,16 @@ export default function About() {
             <img src={picture} />
           </div>
           <div className="about__right">
-            <p>
-              A curiosity-driven Front-End Developer with design chops. I'm
-              passionate about bringing both the technical and visual aspects of
-              digital products to life. User experience, beautiful pixels and
-              writing clean accessible, human code matters to me. I sweat the
-              details. And as a follower of John Maeda’s Laws Of Simplicity, I
-              agree that less is more. I have a BA in Multimedia Design from
-              Curtin University 🇦🇺, a Certificate of Web Development Immersive
-              from Juno College (Formerly HackerYou) 🇨🇦, (and an Advanced Scuba
-              Diving License from PADI 🇵🇭!) I'm happiest when I'm creating,
-              learning, exploring and thinking about how to make things better.
-              Currently solving deceptively simple problems at UsePastel.Com.
+            <p className="about__text">
+              Hello! My name is Emily and I like to resolve code problems,
+              create smart user interface and imagine useful interactions,
+              developing dynamic web experiences & web applications. I’m the happiest
+              when I’m creating, learning, exploring and thinking about how to
+              make things better. For me It all boils down to the details. 
             </p>
+            <p className="about__text">I studied at a Bootcamp in
+              FullStack developing of 850 hours and at the moment I keep
+              studying to improve my skills.</p>
           </div>
         </div>
       </motion.div>
