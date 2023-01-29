@@ -25,7 +25,7 @@ export default function About() {
             <p className="about__text">
               Hello! My name is Emily and I like to resolve code problems,
               create smart user interface and imagine useful interactions,
-              developing dynamic web experiences & web applications. I’m the happiest
+              developing dynamic web experiences and web applications. I’m the happiest
               when I’m creating, learning, exploring and thinking about how to
               make things better. For me It all boils down to the details. 
             </p>
